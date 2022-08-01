@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaintJS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="js-canvas" class="canvas"></canvas>
+    <div class="ctrl">
+        <div class="ctrlRange">
+            <input type="range" id="js-range" min="0.5" max="5.0" value="2.5" step="0.5">
+        </div>
+        <div id="js-color" class="ctrlColors">
+           <div class="ctrlColor jsColor" style="background-color: #2c2c2c"></div>
+           <div class="ctrlColor jsColor off" style="background-color: white"></div>
+           <div class="ctrlColor jsColor off" style="background-color: red"></div>
+           <div class="ctrlColor jsColor off" style="background-color: orange"></div>
+           <div class="ctrlColor jsColor off" style="background-color: yellow"></div>
+           <div class="ctrlColor jsColor off" style="background-color: green"></div>
+           <div class="ctrlColor jsColor off" style="background-color: rgb(0, 217, 255)"></div>
+           <div class="ctrlColor jsColor off" style="background-color: blue"></div>
+           <div class="ctrlColor jsColor off" style="background-color: rgb(168, 0, 168)"></div> 
+        </div>
+        <div class="ctrlBtn">
+            <button id="js-clean">Очистить</button>
+            <button id="js-mode">Заливка</button>
+            <button id="js-save">Сохранить</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
